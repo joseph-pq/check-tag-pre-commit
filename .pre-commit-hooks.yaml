@@ -1,6 +1,6 @@
 - id: check-version-tag
   name: Check if git tag matches pyproject.toml version
   description: Ensures the git tag matches the version defined in pyproject.toml
-  entry: bash hooks/check-version-tag.sh
+  entry: hooks/check-version-tag.sh
   language: system
   stages: [pre-push]
