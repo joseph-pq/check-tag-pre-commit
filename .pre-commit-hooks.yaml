@@ -2,5 +2,5 @@
   name: Check if git tag matches pyproject.toml version
   description: Ensures the git tag matches the version defined in pyproject.toml
   entry: pre_commit_hooks/check-version-tag.sh
-  language: system
+  language: script
   stages: [pre-push]
