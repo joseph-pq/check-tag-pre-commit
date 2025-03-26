@@ -11,9 +11,9 @@ Add the following to your `.pre-commit-config.yaml`:
 
 ```yaml
 -   repo: https://github.com/joseph-pq/check-tag-pre-commit
-    rev: # Use the latest release
+    rev: # set the version you required
     hooks:
-      - id: check-version-tag
+    -   id: check-version-tag
 ```
 
 ## Usage
