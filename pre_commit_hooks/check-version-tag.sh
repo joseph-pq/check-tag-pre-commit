@@ -12,8 +12,8 @@ if [[ -z "$LATEST_TAG" ]]; then
     exit 0
 fi
 
-if [[ "$LATEST_TAG" != "v$PYPROJECT_VERSION" ]]; then
-    echo "ERROR: The latest git tag ($LATEST_TAG) does not match the version in pyproject.toml (v$PYPROJECT_VERSION)."
+if [[ "$LATEST_TAG" != "v$PYPROJECT_VERSION" && "$LATEST_TAG" != "$PYPROJECT_VERSION" ]]; then
+    echo "ERROR: The latest git tag ($LATEST_TAG) does not match the version in pyproject.toml (v$PYPROJECT_VERSION or $PYPROJECT_VERSION)."
     exit 1
 fi
 
